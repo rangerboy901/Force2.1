@@ -14,6 +14,16 @@
 		4ADA49932922BFA100954F10 /* Force2_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49922922BFA100954F10 /* Force2_1Tests.swift */; };
 		4ADA499D2922BFA100954F10 /* Force2_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA499C2922BFA100954F10 /* Force2_1UITests.swift */; };
 		4ADA499F2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA499E2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift */; };
+		4ADA49B12922C04D00954F10 /* AddWorkoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B02922C04D00954F10 /* AddWorkoutScreen.swift */; };
+		4ADA49B32922C06000954F10 /* WorkoutListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B22922C06000954F10 /* WorkoutListScreen.swift */; };
+		4ADA49B52922C07F00954F10 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B42922C07F00954F10 /* CoreDataManager.swift */; };
+		4ADA49B72922C0B700954F10 /* DataFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B62922C0B700954F10 /* DataFormat.swift */; };
+		4ADA49B92922C0E200954F10 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B82922C0E200954F10 /* ViewExtension.swift */; };
+		4ADA49BB2922C11300954F10 /* WorkoutListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49BA2922C11300954F10 /* WorkoutListViewModel.swift */; };
+		4ADA49BE2922C28C00954F10 /* DailyWorkout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49BC2922C28C00954F10 /* DailyWorkout.xcdatamodeld */; };
+		4ADA49C32922C5EB00954F10 /* AddWorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49C22922C5EB00954F10 /* AddWorkoutViewModel.swift */; };
+		4ADA49C52922C63B00954F10 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49C42922C63B00954F10 /* HapticManager.swift */; };
+		4ADA49C72922C6E300954F10 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49C62922C6E300954F10 /* ViewManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,16 @@
 		4ADA49982922BFA100954F10 /* Force2.1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Force2.1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ADA499C2922BFA100954F10 /* Force2_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Force2_1UITests.swift; sourceTree = "<group>"; };
 		4ADA499E2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Force2_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4ADA49B02922C04D00954F10 /* AddWorkoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutScreen.swift; sourceTree = "<group>"; };
+		4ADA49B22922C06000954F10 /* WorkoutListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListScreen.swift; sourceTree = "<group>"; };
+		4ADA49B42922C07F00954F10 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4ADA49B62922C0B700954F10 /* DataFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormat.swift; sourceTree = "<group>"; };
+		4ADA49B82922C0E200954F10 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		4ADA49BA2922C11300954F10 /* WorkoutListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListViewModel.swift; sourceTree = "<group>"; };
+		4ADA49BD2922C28C00954F10 /* DailyWorkout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DailyWorkout.xcdatamodel; sourceTree = "<group>"; };
+		4ADA49C22922C5EB00954F10 /* AddWorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewModel.swift; sourceTree = "<group>"; };
+		4ADA49C42922C63B00954F10 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		4ADA49C62922C6E300954F10 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +94,7 @@
 		4ADA49752922BFA100954F10 = {
 			isa = PBXGroup;
 			children = (
+				4ADA49812922BFA100954F10 /* Force2_1App.swift */,
 				4ADA49802922BFA100954F10 /* Force2.1 */,
 				4ADA49912922BFA100954F10 /* Force2.1Tests */,
 				4ADA499B2922BFA100954F10 /* Force2.1UITests */,
@@ -94,9 +115,13 @@
 		4ADA49802922BFA100954F10 /* Force2.1 */ = {
 			isa = PBXGroup;
 			children = (
-				4ADA49812922BFA100954F10 /* Force2_1App.swift */,
-				4ADA49832922BFA100954F10 /* ContentView.swift */,
+				4ADA49AF2922BFF000954F10 /* Extensions */,
+				4ADA49AE2922BFE600954F10 /* Managers */,
+				4ADA49AD2922BFDB00954F10 /* Models */,
+				4ADA49AC2922BFD300954F10 /* Screens */,
+				4ADA49AB2922BFC900954F10 /* Views */,
 				4ADA49852922BFA100954F10 /* Assets.xcassets */,
+				4ADA49BC2922C28C00954F10 /* DailyWorkout.xcdatamodeld */,
 				4ADA49872922BFA100954F10 /* Preview Content */,
 			);
 			path = Force2.1;
@@ -125,6 +150,51 @@
 				4ADA499E2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift */,
 			);
 			path = Force2.1UITests;
+			sourceTree = "<group>";
+		};
+		4ADA49AB2922BFC900954F10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA49832922BFA100954F10 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4ADA49AC2922BFD300954F10 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA49B02922C04D00954F10 /* AddWorkoutScreen.swift */,
+				4ADA49B22922C06000954F10 /* WorkoutListScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4ADA49AD2922BFDB00954F10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA49BA2922C11300954F10 /* WorkoutListViewModel.swift */,
+				4ADA49C22922C5EB00954F10 /* AddWorkoutViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4ADA49AE2922BFE600954F10 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA49B42922C07F00954F10 /* CoreDataManager.swift */,
+				4ADA49C42922C63B00954F10 /* HapticManager.swift */,
+				4ADA49C62922C6E300954F10 /* ViewManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4ADA49AF2922BFF000954F10 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA49B62922C0B700954F10 /* DataFormat.swift */,
+				4ADA49B82922C0E200954F10 /* ViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +327,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADA49C32922C5EB00954F10 /* AddWorkoutViewModel.swift in Sources */,
+				4ADA49BB2922C11300954F10 /* WorkoutListViewModel.swift in Sources */,
 				4ADA49842922BFA100954F10 /* ContentView.swift in Sources */,
+				4ADA49B32922C06000954F10 /* WorkoutListScreen.swift in Sources */,
+				4ADA49B72922C0B700954F10 /* DataFormat.swift in Sources */,
+				4ADA49BE2922C28C00954F10 /* DailyWorkout.xcdatamodeld in Sources */,
+				4ADA49C72922C6E300954F10 /* ViewManager.swift in Sources */,
+				4ADA49B92922C0E200954F10 /* ViewExtension.swift in Sources */,
+				4ADA49B12922C04D00954F10 /* AddWorkoutScreen.swift in Sources */,
+				4ADA49C52922C63B00954F10 /* HapticManager.swift in Sources */,
+				4ADA49B52922C07F00954F10 /* CoreDataManager.swift in Sources */,
 				4ADA49822922BFA100954F10 /* Force2_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +663,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4ADA49BC2922C28C00954F10 /* DailyWorkout.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4ADA49BD2922C28C00954F10 /* DailyWorkout.xcdatamodel */,
+			);
+			currentVersion = 4ADA49BD2922C28C00954F10 /* DailyWorkout.xcdatamodel */;
+			path = DailyWorkout.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4ADA49762922BFA100954F10 /* Project object */;
 }

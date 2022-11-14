@@ -11,7 +11,7 @@ import SwiftUI
 struct Force2_1App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ViewManager()
         }
     }
 }
