@@ -15,11 +15,11 @@ import SwiftUI
 
 
 
-class CoreDataManager {
+class CoreDataProvider {
     
     let persistentContainer: NSPersistentContainer
     
-    static let shared = CoreDataManager()
+    static let shared = CoreDataProvider()
     
     private init() {
         

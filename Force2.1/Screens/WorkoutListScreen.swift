@@ -45,22 +45,33 @@ struct WorkoutListScreen: View {
         
         List{
             ForEach(workoutListVM.workouts, id: \.id) { workout in
+                NavigationLink(destination: DetailScreen()){
                 CardView(workout: workout)
+            }
                     .cornerRadius(12)
                     .padding()
                     .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)),Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))]), startPoint: .bottom, endPoint: .top))
                     .overlay(
                         RoundedRectangle(cornerRadius: 10, style: .continuous).stroke(self.colorize(type: workout.workoutType ), lineWidth: 8.0))
-                   
+                    .padding(.top, 10)
             }
             .onDelete(perform: deleteWorkout)
-       
+      
     }
         .listStyle(PlainListStyle())
             .navigationTitle("Workouts")
-            .navigationBarItems(trailing: Button("Add Workout") {
-                isPresented = true
-            })
+            .navigationBarItems(
+                trailing:
+                    
+                    Button {
+                        isPresented = true
+                    } label: {
+                        Image(systemName: "plus")
+                            .foregroundColor(.accentColor)
+                            .frame(width: 40, height: 40)
+                            .background(Color.white,in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+                            .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
+                    })
             .sheet(isPresented: $isPresented, onDismiss: {
                 workoutListVM.getAllWorkouts()
             },  content: {
@@ -133,6 +144,7 @@ struct CardView: View {
            
             
         }
+        .padding(.top, 10)
 }
        
     

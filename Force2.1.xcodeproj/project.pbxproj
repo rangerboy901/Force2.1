@@ -16,7 +16,7 @@
 		4ADA499F2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA499E2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift */; };
 		4ADA49B12922C04D00954F10 /* AddWorkoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B02922C04D00954F10 /* AddWorkoutScreen.swift */; };
 		4ADA49B32922C06000954F10 /* WorkoutListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B22922C06000954F10 /* WorkoutListScreen.swift */; };
-		4ADA49B52922C07F00954F10 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B42922C07F00954F10 /* CoreDataManager.swift */; };
+		4ADA49B52922C07F00954F10 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B42922C07F00954F10 /* CoreDataProvider.swift */; };
 		4ADA49B72922C0B700954F10 /* DataFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B62922C0B700954F10 /* DataFormat.swift */; };
 		4ADA49B92922C0E200954F10 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B82922C0E200954F10 /* ViewExtension.swift */; };
 		4ADA49BB2922C11300954F10 /* WorkoutListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49BA2922C11300954F10 /* WorkoutListViewModel.swift */; };
@@ -24,6 +24,11 @@
 		4ADA49C32922C5EB00954F10 /* AddWorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49C22922C5EB00954F10 /* AddWorkoutViewModel.swift */; };
 		4ADA49C52922C63B00954F10 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49C42922C63B00954F10 /* HapticManager.swift */; };
 		4ADA49C72922C6E300954F10 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49C62922C6E300954F10 /* ViewManager.swift */; };
+		4ADA49CD29230BC800954F10 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49CC29230BC800954F10 /* HistoryView.swift */; };
+		4ADA49CF29230DA400954F10 /* EditScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49CE29230DA400954F10 /* EditScreen.swift */; };
+		4ADA49D12923199600954F10 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49D02923199600954F10 /* DetailScreen.swift */; };
+		4ADA49D329233B4400954F10 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49D229233B4400954F10 /* BaseModel.swift */; };
+		4ADA49D529233E8F00954F10 /* Review+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49D429233E8F00954F10 /* Review+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +61,7 @@
 		4ADA499E2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Force2_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4ADA49B02922C04D00954F10 /* AddWorkoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutScreen.swift; sourceTree = "<group>"; };
 		4ADA49B22922C06000954F10 /* WorkoutListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListScreen.swift; sourceTree = "<group>"; };
-		4ADA49B42922C07F00954F10 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4ADA49B42922C07F00954F10 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
 		4ADA49B62922C0B700954F10 /* DataFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormat.swift; sourceTree = "<group>"; };
 		4ADA49B82922C0E200954F10 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		4ADA49BA2922C11300954F10 /* WorkoutListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListViewModel.swift; sourceTree = "<group>"; };
@@ -64,6 +69,11 @@
 		4ADA49C22922C5EB00954F10 /* AddWorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewModel.swift; sourceTree = "<group>"; };
 		4ADA49C42922C63B00954F10 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		4ADA49C62922C6E300954F10 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		4ADA49CC29230BC800954F10 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		4ADA49CE29230DA400954F10 /* EditScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScreen.swift; sourceTree = "<group>"; };
+		4ADA49D02923199600954F10 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		4ADA49D229233B4400954F10 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		4ADA49D429233E8F00954F10 /* Review+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				4ADA49832922BFA100954F10 /* ContentView.swift */,
+				4ADA49CC29230BC800954F10 /* HistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +176,8 @@
 			children = (
 				4ADA49B02922C04D00954F10 /* AddWorkoutScreen.swift */,
 				4ADA49B22922C06000954F10 /* WorkoutListScreen.swift */,
+				4ADA49CE29230DA400954F10 /* EditScreen.swift */,
+				4ADA49D02923199600954F10 /* DetailScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -174,6 +187,7 @@
 			children = (
 				4ADA49BA2922C11300954F10 /* WorkoutListViewModel.swift */,
 				4ADA49C22922C5EB00954F10 /* AddWorkoutViewModel.swift */,
+				4ADA49D229233B4400954F10 /* BaseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,7 +195,7 @@
 		4ADA49AE2922BFE600954F10 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				4ADA49B42922C07F00954F10 /* CoreDataManager.swift */,
+				4ADA49B42922C07F00954F10 /* CoreDataProvider.swift */,
 				4ADA49C42922C63B00954F10 /* HapticManager.swift */,
 				4ADA49C62922C6E300954F10 /* ViewManager.swift */,
 			);
@@ -193,6 +207,7 @@
 			children = (
 				4ADA49B62922C0B700954F10 /* DataFormat.swift */,
 				4ADA49B82922C0E200954F10 /* ViewExtension.swift */,
+				4ADA49D429233E8F00954F10 /* Review+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -331,13 +346,18 @@
 				4ADA49BB2922C11300954F10 /* WorkoutListViewModel.swift in Sources */,
 				4ADA49842922BFA100954F10 /* ContentView.swift in Sources */,
 				4ADA49B32922C06000954F10 /* WorkoutListScreen.swift in Sources */,
+				4ADA49D529233E8F00954F10 /* Review+Extension.swift in Sources */,
 				4ADA49B72922C0B700954F10 /* DataFormat.swift in Sources */,
+				4ADA49D12923199600954F10 /* DetailScreen.swift in Sources */,
+				4ADA49D329233B4400954F10 /* BaseModel.swift in Sources */,
 				4ADA49BE2922C28C00954F10 /* DailyWorkout.xcdatamodeld in Sources */,
 				4ADA49C72922C6E300954F10 /* ViewManager.swift in Sources */,
+				4ADA49CD29230BC800954F10 /* HistoryView.swift in Sources */,
+				4ADA49CF29230DA400954F10 /* EditScreen.swift in Sources */,
 				4ADA49B92922C0E200954F10 /* ViewExtension.swift in Sources */,
 				4ADA49B12922C04D00954F10 /* AddWorkoutScreen.swift in Sources */,
 				4ADA49C52922C63B00954F10 /* HapticManager.swift in Sources */,
-				4ADA49B52922C07F00954F10 /* CoreDataManager.swift in Sources */,
+				4ADA49B52922C07F00954F10 /* CoreDataProvider.swift in Sources */,
 				4ADA49822922BFA100954F10 /* Force2_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

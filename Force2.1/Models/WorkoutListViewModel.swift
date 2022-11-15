@@ -14,15 +14,15 @@ class WorkoutListViewModel: ObservableObject {
     @Published var workouts = [WorkoutViewModel]()
     
     func deleteWorkout(workout: WorkoutViewModel) {
-        let workout = CoreDataManager.shared.getWorkoutById(id: workout.id)
+        let workout = CoreDataProvider.shared.getWorkoutById(id: workout.id)
         if let workout = workout {
-            CoreDataManager.shared.deleteWorkout(workout)
+            CoreDataProvider.shared.deleteWorkout(workout)
         }
     }
     
     func getAllWorkouts() {
         
-        let workouts = CoreDataManager.shared.getAllWorkouts()
+        let workouts = CoreDataProvider.shared.getAllWorkouts()
         DispatchQueue.main.async {
             self.workouts = workouts.map(WorkoutViewModel.init)
         }

@@ -16,7 +16,7 @@ class AddWorkoutViewModel: ObservableObject {
     
     func save() {
         
-        let manager = CoreDataManager.shared
+        let manager = CoreDataProvider.shared
         let workout = Workout(context: manager.persistentContainer.viewContext)
         workout.title = title
         workout.objective = objective
