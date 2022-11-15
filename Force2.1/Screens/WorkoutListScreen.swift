@@ -59,10 +59,10 @@ struct WorkoutListScreen: View {
       
     }
         .listStyle(PlainListStyle())
-            .navigationTitle("Workouts")
+            .navigationTitle("Daily Workouts")
             .navigationBarItems(
                 trailing:
-                    
+                  //MARK:  ADD WORKOUT BUTTON
                     Button {
                         isPresented = true
                     } label: {
@@ -70,7 +70,7 @@ struct WorkoutListScreen: View {
                             .foregroundColor(.accentColor)
                             .frame(width: 40, height: 40)
                             .background(Color.white,in: RoundedRectangle(cornerRadius: 10, style: .continuous))
-                            .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
+                            .shadow(color: .black.opacity(0.4), radius: 7, x: 7, y: 7)
                     })
             .sheet(isPresented: $isPresented, onDismiss: {
                 workoutListVM.getAllWorkouts()
@@ -113,39 +113,38 @@ struct CardView: View {
     
     var body: some View {
         
-        VStack(alignment: .leading) {
-            Text(workout.title)
-                .foregroundColor(.accentColor)
-                .accessibilityAddTraits(.isHeader)
-                .font(.title2)
-                .fontWeight(.bold)
-                
-            Spacer()
-            Text(workout.objective)
-                .font(.caption)
-                .fontWeight(.semibold)
-                .foregroundColor(.gray)
-            Spacer()
-            
-            HStack {
-                Label(workout.releaseDate ?? "", systemImage: "stopwatch.fill")
-                    .foregroundColor(.primary)
-                    .accessibilityElement(children: .ignore)
-                   
-                Spacer()
-                Text(workout.workoutType)
-                    .padding(.horizontal, 3)
-                    .foregroundColor(.primary)
-                    .accessibilityLabel("Workout type\(workout.workoutType) ")
+        HStack {
+            VStack(alignment: .center, spacing: 5) {
+                Text(workout.title)
+                    .foregroundColor(.accentColor)
+                    .accessibilityAddTraits(.isHeader)
                     .font(.body)
-                    .overlay(
-                        Capsule().stroke(self.colorize(type: workout.workoutType ), lineWidth: 1))
+                    .fontWeight(.bold)
+                Text(workout.objective)
+                    .font(.caption)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.gray)
+                Text(workout.releaseDate ?? "")
+                .font(.footnote)
+            }
+            .padding(.all)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10).stroke(self.colorize(type: workout.workoutType ), lineWidth: 4))
+            
+                    Spacer()
+               
+                    Text(workout.workoutType)
+                        .padding(4)
+                        .fontWeight(.bold)
+                        .foregroundColor(.primary)
+                        .accessibilityLabel("Workout type\(workout.workoutType) ")
+                        .font(.caption)
+                        .overlay(
+                            Capsule().stroke(self.colorize(type: workout.workoutType ), lineWidth: 4))
+                    
+                }
+        .padding(5)
             }
            
-            
         }
-        .padding(.top, 10)
-}
-       
-    
-}
+

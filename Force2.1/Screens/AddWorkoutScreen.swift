@@ -2,7 +2,7 @@
 //  AddWorkoutScreen.swift
 //  Force2.1
 //
-//  Created by Joseph Wil;liam DeWeese on 11/14/22.
+//  Created by Joseph William DeWeese on 11/14/22.
 //
 
 import SwiftUI
@@ -56,8 +56,9 @@ struct AddWorkoutScreen: View {
                     ForEach(types, id: \.self) {
                         Text($0)
                     }
+                    .pickerStyle(.automatic)
                 }
-                .pickerStyle(SegmentedPickerStyle())
+               
                 .foregroundColor(.primary)
                 DatePicker("Date", selection: $addWorkoutVM.releaseDate)
                 
@@ -72,7 +73,7 @@ struct AddWorkoutScreen: View {
                 .foregroundColor(.white)
                 .cornerRadius(10)
                 .frame(minWidth: 300, maxWidth: .infinity, minHeight: 50, maxHeight: 75)
-                .background(.green)
+                .background(.blue)
                 .cornerRadius(10)
             }
             
