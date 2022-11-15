@@ -29,6 +29,8 @@
 		4ADA49D12923199600954F10 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49D02923199600954F10 /* DetailScreen.swift */; };
 		4ADA49D329233B4400954F10 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49D229233B4400954F10 /* BaseModel.swift */; };
 		4ADA49D529233E8F00954F10 /* Review+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49D429233E8F00954F10 /* Review+Extension.swift */; };
+		4ADA49D72924125600954F10 /* AddExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49D62924125600954F10 /* AddExerciseViewModel.swift */; };
+		4ADA49D92924149F00954F10 /* Exercise + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49D82924149F00954F10 /* Exercise + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		4ADA49D02923199600954F10 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 		4ADA49D229233B4400954F10 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		4ADA49D429233E8F00954F10 /* Review+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+Extension.swift"; sourceTree = "<group>"; };
+		4ADA49D62924125600954F10 /* AddExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseViewModel.swift; sourceTree = "<group>"; };
+		4ADA49D82924149F00954F10 /* Exercise + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,7 @@
 				4ADA49BA2922C11300954F10 /* WorkoutListViewModel.swift */,
 				4ADA49C22922C5EB00954F10 /* AddWorkoutViewModel.swift */,
 				4ADA49D229233B4400954F10 /* BaseModel.swift */,
+				4ADA49D62924125600954F10 /* AddExerciseViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 				4ADA49B62922C0B700954F10 /* DataFormat.swift */,
 				4ADA49B82922C0E200954F10 /* ViewExtension.swift */,
 				4ADA49D429233E8F00954F10 /* Review+Extension.swift */,
+				4ADA49D82924149F00954F10 /* Exercise + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -344,8 +350,10 @@
 			files = (
 				4ADA49C32922C5EB00954F10 /* AddWorkoutViewModel.swift in Sources */,
 				4ADA49BB2922C11300954F10 /* WorkoutListViewModel.swift in Sources */,
+				4ADA49D72924125600954F10 /* AddExerciseViewModel.swift in Sources */,
 				4ADA49842922BFA100954F10 /* ContentView.swift in Sources */,
 				4ADA49B32922C06000954F10 /* WorkoutListScreen.swift in Sources */,
+				4ADA49D92924149F00954F10 /* Exercise + Extension.swift in Sources */,
 				4ADA49D529233E8F00954F10 /* Review+Extension.swift in Sources */,
 				4ADA49B72922C0B700954F10 /* DataFormat.swift in Sources */,
 				4ADA49D12923199600954F10 /* DetailScreen.swift in Sources */,

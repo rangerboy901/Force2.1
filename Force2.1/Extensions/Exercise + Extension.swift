@@ -1,18 +1,19 @@
 //
-//  Review+Extension.swift
+//  Exercise + Extension.swift
 //  Force2.1
 //
-//  Created by Joseph William DeWeese on 11/14/22.
+//  Created by Joseph Wil;liam DeWeese on 11/15/22.
 //
 
 import Foundation
 import CoreData
 
-extension Review: BaseModel {
+extension Exercise {
     
-    static func getReviewsByWorkoutId(workoutId: NSManagedObjectID) -> [Review] {
+    
+    static func getExercisesByWorkoutId(workoutId: NSManagedObjectID) -> [Exercise] {
         
-        let request: NSFetchRequest<Review> = Review.fetchRequest()
+        let request: NSFetchRequest<Exercise> = Exercise.fetchRequest()
         request.predicate = NSPredicate(format: "workout = %@", workoutId)
         
         do {
@@ -20,5 +21,8 @@ extension Review: BaseModel {
         } catch {
             return []
         }
+        
     }
+    
 }
+
