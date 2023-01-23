@@ -43,14 +43,16 @@ struct AddWorkoutScreen: View {
                     .cornerRadius(10)
                     .foregroundColor(.primary)
                 
-                TextField("Enter workout Objective or Description...",text: $addWorkoutVM.objective)
-                    .frame(width: 350, height: 75, alignment: .leading)
-                    .multilineTextAlignment(.leading)
-                    .lineLimit(5)
-                    .padding(2)
-                    .background(Color(UIColor.tertiarySystemFill))
-                    .cornerRadius(10)
-                    .foregroundColor(.primary)
+                Section(header: Text("Workout Description: ")) {
+                   TextEditor(text: $addWorkoutVM.objective)
+                        .frame(width: 300, height: 150)
+                        .multilineTextAlignment(.center)
+                        .lineLimit(7)
+                        .padding(2)
+                        .background(Color(UIColor.tertiarySystemFill))
+                        .cornerRadius(10)
+                        .foregroundColor(.primary)
+                }
                     //MARK:  WORKOUT TYPE PICKER
                 Picker("Workout Type:", selection: $addWorkoutVM.workoutType) {
                     ForEach(types, id: \.self) {
